@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             </Route>
             <Route exact path="/blogs/:id" element={<BlogDetails />}>
             </Route>
+            <Route exact path="*" element={<NotFound />}></Route>
           </Routes>
         </div>
       </div>
